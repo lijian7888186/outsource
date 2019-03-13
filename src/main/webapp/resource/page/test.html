@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+test,test
+<div id="div">点击</div>
+</body>
+<script type="text/javascript">
+    $("#div").click(function () {
+        $.ajax({
+            type:"post",
+            url:"ProjectRequire/submitRequire",
+            dataType:"json",
+            data:{"userName":"","phone":"12312312312","content":"test测试"},
+            success:function(data) {
+                console.log(data);
+            }
+        });
+    });
+</script>
+</html>

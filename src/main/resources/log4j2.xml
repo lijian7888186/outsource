@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<appenders>
+		<console name="Console" target="SYSTEM_OUT">
+             <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+         </console>
+	</appenders>
+
+<loggers>
+	<logger name="org.apache.http">
+    <level value="ERROR" />
+  </logger>
+  <logger name="org.springframework">
+    <level value="ERROR" />
+  </logger>
+  <logger name="org.mybatis">
+    <level value="DEBUG" />
+  </logger>
+  <logger name="com.ibatis">
+    <level value="DEBUG" />
+  </logger>
+  <logger name="net.sf.ehcache">
+    <level value="ERROR" />
+  </logger>
+  <logger name="org.apache.commons.beanutils.converters">
+    <level value="ERROR" />
+  </logger>
+  <logger name="com.project.outsource">
+    <level value="DEBUG" />
+  </logger>
+
+  <root level="DEBUG">
+    <appender-ref ref="Console" />
+  </root>
+</loggers>
+
+</configuration>

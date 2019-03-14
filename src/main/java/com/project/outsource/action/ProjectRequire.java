@@ -38,6 +38,7 @@ public class ProjectRequire {
 		logger.debug(userName);
 		logger.debug(phone);
 		logger.debug(content);
+		System.out.println(1/0);
 		if (StringUtils.isBlank(userName)) {
 			return GSON.toJson(new ResData(STATUS.PARAM_ERROR));
 		}
